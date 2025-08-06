@@ -35,7 +35,8 @@ const menuItems = [
 ];
 
 export const AdminSidebar: React.FC = () => {
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
+  const collapsed = state === "collapsed";
 
   return (
     <Sidebar className={`${collapsed ? 'w-[72px]' : 'w-64'} border-r border-sidebar-border bg-sidebar transition-all duration-300`}>

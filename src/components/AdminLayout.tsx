@@ -10,7 +10,7 @@ interface AdminLayoutProps {
 
 export const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   return (
-    <SidebarProvider collapsedWidth={72}>
+    <SidebarProvider>
       <div className="min-h-screen flex w-full bg-background">
         <AdminSidebar />
         
